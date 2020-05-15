@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewUserName"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        tools:text="Demo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewUserName"
+        android:textColor="@color/colorWhite"
+        tools:text="Demo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textViewUserEmail"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dislikeBtn"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_thumb"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/mapBtn"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_map"
+            android:padding="5dp"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
